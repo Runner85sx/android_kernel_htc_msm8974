@@ -444,6 +444,8 @@ obj-$(CONFIG_MACH_M8_DUG) += board-m8-gpiomux.o
 obj-$(CONFIG_MACH_M8_WHL) += board-m8-gpiomux.o
 obj-$(CONFIG_MACH_M8_WL) += board-m8-gpiomux.o
 
+obj-$(CONFIG_FORCE_FAST_CHARGE) += fastchg.o
+
 obj-y += smlog.o
 
 obj-$(CONFIG_HTC_RPM_CMD) += rpm_htc_cmd.o
@@ -451,3 +453,4 @@ obj-$(CONFIG_HTC_MONITOR) += htc_monitor.o
 
 obj-$(CONFIG_ARCH_RANDOM) += early_random.o
 obj-$(CONFIG_PERFMAP) += perfmap.o
+obj-$(CONFIG_MSM_SLEEPER) += msm-sleeper.o
